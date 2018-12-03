@@ -1,6 +1,7 @@
 # Example HAProxy setup to reverse proxy multiple domains
-This setup uses a docker-compose to setup HAProxy.<br>
+This setup uses a docker to setup HAProxy.<br>
 The dockerized instance binds ports 80 and 443 on the host.<br>
+This setup uses Http2 and http->https redirection via a 301 for all domains.<br>
 
 ## Configuring
 The dockerized instance mounts a file, haproxy.cfg, and a folder ./certs.<br>
