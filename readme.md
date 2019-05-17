@@ -29,3 +29,10 @@ This makes it simple to proxy to a port on the machine, but isn't supported when
 
 In order to run on non-linux, disable the line `network_mode: "host"` in the docker-compose.yml.<br>
 Additionally, in the haproxy.cfg, in the `backend` section, change all instances of `localhost` to `host.docker.internal`.
+
+## TODO:
+- [ ] Update with discoveries 
+- [ ] Update with example of proxying by rewrite matches
+- [ ] See about dynamically mapping backends via map_reg
+    [1](https://ops.tips/gists/replacing-haproxy-acls-by-haproxy-maps/)
+    [2](https://www.haproxy.com/blog/introduction-to-haproxy-maps/)
